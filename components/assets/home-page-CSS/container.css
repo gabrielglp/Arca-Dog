@@ -1,266 +1,268 @@
-.details {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    height: 90vh;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow-x: hidden;
-}
-
-.brief_details {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    transform: translate(40%, -10%);
-}
-
-.brief_details h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-.brief_details p {
-    color: rgb(98, 98, 98);
-    font-size: 15px;
-}
-
-.mackup-img {
-    transform: translate(150px, -50px);
-}
-
-.reason {
-    background-color: rgb(216, 227, 250);
-    padding: 100px 50px;
-}
-
-.benefit {
-    position: relative;
-    padding-bottom: 50px;
-    width: 45vw;
-}
-
-.benefit h1 {
-    font-size: 40px;
-    margin: 20px 0;
-    margin-left: 2rem;
-}
-
-.benefit p {
-    font-size: 15px;
-    color: rgb(123, 123, 123);
-    margin-left: 2rem;
-}
-
-.mackup-img {
-    width: 90%;
-}
-
-.makeup {
-    transition: transform 0.8s;
-}
-
-.makeup:hover {
-    transform: scale(1.03);
-}
-
-.why_list {
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-.reason .why_list {
-    display: flex;
-    justify-content: space-around;
-    gap: 1.5em;
-}
-
-.why_list .img-icon {
-    width: 30%;
-    padding: 1px 0;
-}
-
-.why_list>div h2 {
-    justify-content: center;
-    padding: 15px 0;
-}
-
-.why_list>div p {
-    font-size: .8rem;
-    color: rgb(123, 123, 123);
-}
-
-.latest-articles {
-    padding: 100px 50px;
-}
-
-img {
-    width: 30%;
-}
-
-aside {
-    width: 100%;
-    height: 85vh;
-    background-image: linear-gradient(rgba(197, 216, 216, 0.76), rgba(162, 179, 185, 0.7)), url('../images/sitting-basenji-dog-wearing-a-huge-white-motorcycle-helmet-in-a-room-with-white-walls-and-light-wooden-floors.jpg') !important;
-    background-position: center;
-    background-size: cover;
-}
-
-.section-sobre {
-    display: grid;
-    grid-template-columns: 102%;
-    height: 88vh;
-    justify-content: center;
-    margin-left: 59vw;
-    align-items: center;
-}
-
-.wrapper-sobre {
-    width: 70%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    padding: 25px 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.094);
-
-    transition: transform .8s;
-
-    animation: zoomInDown;
-    animation-duration: 2s;
-}
-
-.wrapper-sobre:hover {
-    transform: scale(1.05);
-}
-
-.wrapper-sobre h1 {
-    font-size: 2.2vw;
-    color: rgb(86, 154, 231);
-    margin-bottom: 20px;
-}
-
-.wrapper-sobre p {
-    color: rgb(98, 98, 98);
-    font-size: 1vw;
-}
-
-footer {
-    background-color: #657ff1;
-    padding: 50px 0;
-}
-
-.container-footer {
-    max-width: 1400px;
-    padding: 0 4%;
-    margin: auto;
-}
-
-.row-footer {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-col {
-    width: 25%;
-    padding: 0 15px;
-}
-
-.footer-col h4 {
-    font-size: 22px;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: 500;
-    position: relative;
-    text-transform: uppercase;
-}
-
-.footer-col ul {
-    list-style: none;
-}
-
-.footer-col ul li {
-    margin: 10px 0;
-}
-
-.footer-col ul li a {
-    font-size: 16px;
-    text-transform: capitalize;
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
-    display: block;
-    transition: all 0.3s ease;
-}
-
-.footer-col ul li a:hover {
-    color: #cecdcd;
-    padding-left: 10px;
-}
-
-.footer-col .medias-socias {
-    margin-top: 30px;
-}
-
-.footer-col .medias-socias a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 40px;
-    margin: 0 10px 10px 0;
-    text-decoration: none;
-    border-radius: 50%;
-    color: white;
-    border: 1px solid white;
-    transition: all 0.5s ease;
-}
-
-.footer-col .medias-socias a i {
-    font-size: 20px;
-}
-
-.footer-col .medias-socias a:hover {
-    color: #657ff1;
-    background-color: white;
-}
-
-.footer-col .form-sub input {
-    width: 100%;
-    padding: 10px;
-    font-size: 15px;
-    outline: none;
-    border: 1px solid white;
-    color: white;
-    background-color: #657ff1;
-}
-
-.footer-col .form-sub input::placeholder {
-    color: white;
-}
-
-.footer-col .form-sub button {
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    font-size: 17px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    color: #657ff1;
-    border-radius: 3px;
-    font-weight: bold;
-    background-color: white;
-}
-
-/* Responsivo */
-@media (max-width: 800px) {
-    .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
+@media (min-width: 800px) {
+    .details {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow-x: hidden;
     }
-}
 
-@media (max-width:600px) {
-    .footer-col {
+    .brief_details {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        transform: translate(40%, -10%);
+    }
+
+    .brief_details h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .brief_details p {
+        color: rgb(98, 98, 98);
+        font-size: 15px;
+    }
+
+    .mackup-img {
+        transform: translate(150px, -50px);
+    }
+
+    .reason {
+        background-color: rgb(216, 227, 250);
+        padding: 100px 50px;
+    }
+
+    .benefit {
+        position: relative;
+        padding-bottom: 50px;
+        width: 45vw;
+    }
+
+    .benefit h1 {
+        font-size: 40px;
+        margin: 20px 0;
+        margin-left: 2rem;
+    }
+
+    .benefit p {
+        font-size: 15px;
+        color: rgb(123, 123, 123);
+        margin-left: 2rem;
+    }
+
+    .mackup-img {
+        width: 90%;
+    }
+
+    .makeup {
+        transition: transform 0.8s;
+    }
+
+    .makeup:hover {
+        transform: scale(1.03);
+    }
+
+    .why_list {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .reason .why_list {
+        display: flex;
+        justify-content: space-around;
+        gap: 1.5em;
+    }
+
+    .why_list .img-icon {
+        width: 30%;
+        padding: 1px 0;
+    }
+
+    .why_list>div h2 {
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .why_list>div p {
+        font-size: .8rem;
+        color: rgb(123, 123, 123);
+    }
+
+    .latest-articles {
+        padding: 100px 50px;
+    }
+
+    img {
+        width: 30%;
+    }
+
+    aside {
         width: 100%;
+        height: 85vh;
+        background-image: linear-gradient(rgba(197, 216, 216, 0.76), rgba(162, 179, 185, 0.7)), url('../images/sitting-basenji-dog-wearing-a-huge-white-motorcycle-helmet-in-a-room-with-white-walls-and-light-wooden-floors.jpg') !important;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .section-sobre {
+        display: grid;
+        grid-template-columns: 102%;
+        height: 88vh;
+        justify-content: center;
+        margin-left: 59vw;
+        align-items: center;
+    }
+
+    .wrapper-sobre {
+        width: 70%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 25px 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.094);
+
+        transition: transform .8s;
+
+        animation: zoomInDown;
+        animation-duration: 2s;
+    }
+
+    .wrapper-sobre:hover {
+        transform: scale(1.05);
+    }
+
+    .wrapper-sobre h1 {
+        font-size: 2.2vw;
+        color: rgb(86, 154, 231);
+        margin-bottom: 20px;
+    }
+
+    .wrapper-sobre p {
+        color: rgb(98, 98, 98);
+        font-size: 1vw;
+    }
+
+    footer {
+        background-color: #657ff1;
+        padding: 50px 0;
+    }
+
+    .container-footer {
+        max-width: 1400px;
+        padding: 0 4%;
+        margin: auto;
+    }
+
+    .row-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-col {
+        width: 25%;
+        padding: 0 15px;
+    }
+
+    .footer-col h4 {
+        font-size: 22px;
+        color: white;
+        margin-bottom: 20px;
+        font-weight: 500;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    .footer-col ul {
+        list-style: none;
+    }
+
+    .footer-col ul li {
+        margin: 10px 0;
+    }
+
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .footer-col ul li a:hover {
+        color: #cecdcd;
+        padding-left: 10px;
+    }
+
+    .footer-col .medias-socias {
+        margin-top: 30px;
+    }
+
+    .footer-col .medias-socias a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        margin: 0 10px 10px 0;
+        text-decoration: none;
+        border-radius: 50%;
+        color: white;
+        border: 1px solid white;
+        transition: all 0.5s ease;
+    }
+
+    .footer-col .medias-socias a i {
+        font-size: 20px;
+    }
+
+    .footer-col .medias-socias a:hover {
+        color: #657ff1;
+        background-color: white;
+    }
+
+    .footer-col .form-sub input {
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+        outline: none;
+        border: 1px solid white;
+        color: white;
+        background-color: #657ff1;
+    }
+
+    .footer-col .form-sub input::placeholder {
+        color: white;
+    }
+
+    .footer-col .form-sub button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 17px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: #657ff1;
+        border-radius: 3px;
+        font-weight: bold;
+        background-color: white;
+    }
+
+    /* Responsivo */
+    @media (max-width: 800px) {
+        .footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width:600px) {
+        .footer-col {
+            width: 100%;
+        }
     }
 }
