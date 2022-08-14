@@ -1,0 +1,337 @@
+.menu {
+    width: 100%;
+    display: flex;
+    place-items: center;
+    place-content: space-between;
+    padding: 15px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.aTagUl {
+    margin-right: 1vw;
+    font-size: 17px;
+    padding: 8px 7px;
+    border-radius: 3px;
+    transition: 200ms;
+    color: black;
+    text-decoration: none;
+}
+
+.aTagUl:hover {
+    color: #444;
+    background-color: white;
+}
+
+#ativo {
+    color: #444;
+    background-color: white;
+}
+
+.menu img {
+    width: 60px;
+    height: 60px;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+#button-refresh {
+    box-sizing: border-box;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid rgb(93, 142, 247);;
+    color: rgb(93, 142, 247);
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 1.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  #button-refresh:hover, #button-refresh:focus {
+    color: #fff;
+    outline: 0;
+  }
+
+  #button-refresh {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  #button-refresh:hover {
+    box-shadow: 0 0 40px 40px #668ae3 inset;
+  }
+
+.test-class {
+    width: 1120px;
+    width: 100%;
+    /* background-color: grey; */
+    margin-top: 2rem;
+    padding: 4px 100px;
+}
+
+.suggested-breed {
+    margin: 0 40px;
+}
+
+#informations-suggested-breed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#informations-suggested-breed h1 {
+    /* font-family: 'Open Sans', sans-serif; */
+    background-color: rgba(138, 168, 230, 0.5);
+    color: white;
+    border-radius: 15px;
+    padding: 8px 19px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.094);
+    transition: transform .8s;
+}
+
+#informations-suggested-breed h1:hover {
+    transform: scale(1.03);
+}
+
+#button-refresh {
+    margin-left: 75rem;
+}
+
+#breed-details-1 {
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.146);
+    transition: transform .8s;
+}
+
+#breed-details-2 {
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.146);
+    ;
+    transition: transform .8s;
+}
+
+#breed-details-3 {
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.146);
+    ;
+    transition: transform .5s ease-in-out;
+}
+
+#breed-details-1:hover {
+    transform: scale(1.08);
+}
+
+#breed-details-2:hover {
+    transform: scale(1.08);
+}
+
+#breed-details-3:hover {
+    transform: scale(1.08);
+}
+
+.nome-da-classe-pra-fica-lado-a-lado {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.img-class {
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070F4;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#wrap-breed-details {
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+
+#wrap-breed-details-img-content {
+    width: 70vw;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    row-gap: 5px;
+    padding: 25px 0;
+
+    animation: zoomIn;
+    animation-duration: 2s;
+}
+
+#title-name-breed {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+#details-breed {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+#button-breed {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: rgb(93, 142, 247);
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#button-breed:hover {
+    background: #265df2;
+}
+
+
+#loader {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #22a6b3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#wrapper-primary-dog-breeds {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 20px 26rem;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+select {
+    outline: 0;
+    /* box-shadow: none; */
+    border: 0 !important;
+    border-radius: 12px;
+    background: rgb(93, 142, 247);
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+.label-primary-dog-breeds {
+    margin-top: 1.5vw;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+#primary-dog-breeds {
+    margin-bottom: 25px;
+}
+
+#img-dog-breeds {
+    display: block;
+    margin: auto;
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070F4;
+}
+
+.p-details-breed {
+    display: flex;
+    text-align: center;
+    color: #707070;
+    padding: 30px 20px;
+}
+
+.button-dog-breeds-index {
+    display: flex;
+    margin: auto;
+    margin-bottom: 2rem;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 17px 94px;
+    background-color: rgb(93, 142, 247);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-dog-breeds-index:hover {
+    background: #265df2;
+}
+
+
+.footer-identidade {
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.divLoader {
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}

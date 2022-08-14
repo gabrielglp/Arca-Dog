@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="components/assets/images/dog.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="components/assets/pets-page-CSS/general.css" />
+    <script src="components/JS/pets-page.js" defer></script>
+  </head>
+  <body>
+    <div class="divLoader">
+      <div id="loader"></div>
+    </div>
+
+    <main class="hidden">
+      <nav class="menu">
+        <div>
+          <img
+            src="components/assets/images/dog.png"
+            alt=""
+            href="index.html"
+          />
+        </div>
+
+        <ul>
+          <li><a class="aTagUl" href="index.html">Inicio</a></li>
+          <li><a class="aTagUl" href="index.html#anchor">Sobre</a></li>
+          <li><a class="aTagUl" href="">Contato</a></li>
+          <li><a class="aTagUl" href="" id="ativo">Pets</a></li>
+        </ul>
+      </nav>
+      <div id="form" class="hidden">
+        <p>Digite o seu nome:</p>
+        <input type="text" />
+
+        <p>Digite o seu celular:</p>
+        <input type="tel" placeholder="(xx) xxxxx-xxxx" />
+
+        <button onclick="sendPersonalInformations()">
+          Continuar
+        </button>
+      </div>
+
+      <footer>
+        <div id="image-container" class="test-class"></div>
+
+        <div id="wrapper-primary-dog-breeds">
+          <label for="primary-dog-breeds" class="label-primary-dog-breeds">
+            Olhe a nossa seleção de doguinhos
+          </label>
+          <br />
+          <select
+            id="primary-dog-breeds"
+            onchange="setBreedImage(this)"
+          ></select>
+          <div class="wrapper-img-details-breeds">
+            <img
+              id="img-dog-breeds"
+              src="components/assets/images/n02110627_3409.jpg"
+              alt=""
+            />
+            <p class="p-details-breed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+              rutrum nibh ac justo pulvinar, sit amet pellentesque dui mattis.
+              Aliquam aliquam commodo massa non feugiat. Sed ultrices urna a
+              interdum.
+            </p>
+            <button class="button-dog-breeds-index">
+              <a href="formulario-page.html">Me Adote!</a>
+            </button>
+          </div>
+        </div>
+      </footer>
+      <footer class="footer-identidade">
+        <p>Author: Gabriel Martins &copy;</p>
+      </footer>
+    </main>
+  </body>
+</html>

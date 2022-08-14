@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="components/assets/images/dog.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="components/assets/formulario-page-css/formulario-page.css"
+    />
+    <script src="components/JS/formulario-page.js" defer></script>
+    <title>Formulário</title>
+  </head>
+
+  <body>
+    <div id="fade" class="hide">
+      <div id="message" class="hide">
+        <div class="alert alert-light" role="alert">
+          <h3>Por Favor comparecer a ONG</h3>
+          <p class="pMessage">
+            Compareça na nossa ONG e venha conhecer o seu melhor amigo
+          </p>
+          <button id="close-message" type="button" class="btn btn-secondary">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="form-image">
+        <img
+          src="components/assets/images/cachorrinho-fofo-se-passando-por-um-empresario_23-2148985938.webp"
+          alt=""
+        />
+      </div>
+      <div class="form">
+        <form class="address-from">
+          <div class="form-header">
+            <div class="title">
+              <h1>Adotando o doguinho</h1>
+            </div>
+            <div class="login-button">
+              <button><a href="pets-page.html">Voltar</a></button>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="input-box">
+              <label for="firstname">Primeiro Nome</label>
+              <input
+                id="firstname"
+                type="text"
+                name="firstname"
+                placeholder="Digite seu primeiro nome"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="lastname">Sobrenome</label>
+              <input
+                id="lastname"
+                type="text"
+                name="lastname"
+                placeholder="Digite seu sobrenome"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label for="email">E-mail</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required
+              />
+            </div>
+
+            <div class="input-box">
+              <label for="number">Celular</label>
+              <input
+                id="number"
+                type="tel"
+                name="number"
+                placeholder="(xx) xxxx-xxxx"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="gender-inputs">
+            <div class="gender-title">
+              <h6>Gênero</h6>
+            </div>
+
+            <div class="gender-group">
+              <div class="gender-input">
+                <input id="female" type="radio" name="gender" />
+                <label for="female">Feminio</label>
+              </div>
+
+              <div class="gender-input box">
+                <input id="male" type="radio" name="gender" />
+                <label for="male">Masculino</label>
+              </div>
+            </div>
+          </div>
+          <div class="continue-button">
+            <button class="button">Adotar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
