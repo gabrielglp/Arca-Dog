@@ -1,4 +1,4 @@
-@media (min-width: 1400px) {
+@media (max-width: 1400px) {
     .menu {
         width: 100%;
         display: flex;
@@ -58,6 +58,7 @@
         padding: 1.2em 1.8em;
         text-decoration: none;
         text-align: center;
+        margin-right: 11rem;
         text-transform: uppercase;
         font-weight: 700;
     }
@@ -190,7 +191,7 @@
     }
 
     #wrap-breed-details-img-content {
-        width: 70vw;
+        width: 75vw;
         position: relative;
         display: flex;
         justify-content: space-around;
@@ -275,7 +276,7 @@
 
     .label-primary-dog-breeds {
         margin-top: 1.5vw;
-        font-size: 2vw;
+        font-size: 1.7vw;
         font-weight: 700;
     }
 
