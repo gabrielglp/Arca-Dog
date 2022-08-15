@@ -1,8 +1,8 @@
-@media (max-width: 800px) {
+@media (max-width: 616px) {
     .details {
         display: grid;
-        grid-template-columns: 40% 60%;
-        height: 90vh;
+        grid-template-columns: 89% 17%;
+        height: 100vh;
         justify-content: center;
         align-items: center;
         position: relative;
@@ -17,7 +17,7 @@
     }
 
     .brief_details h1 {
-        font-size: 50px;
+        font-size: 45px;
         margin-bottom: 20px;
     }
 
@@ -27,7 +27,7 @@
     }
 
     .mackup-img {
-        transform: translate(150px, -50px);
+        display: none;
     }
 
     .reason {
@@ -42,7 +42,8 @@
     }
 
     .benefit h1 {
-        font-size: 40px;
+        width: 130%;
+        font-size: 1.7rem;
         margin: 20px 0;
         margin-left: 2rem;
     }
@@ -81,7 +82,7 @@
     } */
 
     .img-icon {
-        width: 22%;
+        width: 20%;
         padding: 20px 0;
     }
 
@@ -94,7 +95,6 @@
         font-size: 1.2rem;
         color: rgb(123, 123, 123);
     }
-
 
     .latest-articles {
         padding: 100px 50px;
@@ -114,15 +114,15 @@
 
     .section-sobre {
         display: grid;
-        grid-template-columns: 102%;
+        grid-template-columns: 99%;
         height: 84vh;
         justify-content: center;
-        margin-left: 59vw;
+        margin-left: 44vw;
         align-items: center;
     }
 
     .wrapper-sobre {
-        width: 70%;
+        width: 87%;
         background-color: rgb(255, 255, 255);
         border-radius: 10px;
         padding: 25px 20px;
@@ -139,14 +139,14 @@
     }
 
     .wrapper-sobre h1 {
-        font-size: 2.5vw;
+        font-size: 2.9vw;
         color: rgb(86, 154, 231);
         margin-bottom: 20px;
     }
 
     .wrapper-sobre p {
         color: rgb(98, 98, 98);
-        font-size: 1.2vw;
+        font-size: 2vw;
     }
 
     footer {
@@ -162,6 +162,7 @@
 
     .row-footer {
         display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
 
@@ -170,8 +171,12 @@
         padding: 0 15px;
     }
 
+    .hidden {
+        display: none;
+    }
+
     .footer-col h4 {
-        font-size: 19px;
+        font-size: 16px;
         color: white;
         margin-bottom: 20px;
         font-weight: 500;
@@ -188,7 +193,7 @@
     }
 
     .footer-col ul li a {
-        font-size: 14px;
+        font-size: 11px;
         text-transform: capitalize;
         color: white;
         text-decoration: none;
@@ -221,7 +226,7 @@
     }
 
     .footer-col .medias-socias a i {
-        font-size: 17px;
+        font-size: 13px;
     }
 
     .footer-col .medias-socias a:hover {
@@ -232,7 +237,7 @@
     .footer-col .form-sub input {
         width: 100%;
         padding: 10px;
-        font-size: 13px;
+        font-size: 10px;
         outline: none;
         border: 1px solid white;
         color: white;
@@ -247,7 +252,7 @@
         width: 100%;
         margin-top: 10px;
         padding: 10px;
-        font-size: 14px;
+        font-size: 11px;
         outline: none;
         border: none;
         cursor: pointer;
@@ -256,7 +261,7 @@
         font-weight: bold;
         background-color: white;
     }
-    
+
     [data-anime] {
         opacity: 0;
         transition: 1.5s;

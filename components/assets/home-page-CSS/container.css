@@ -125,8 +125,8 @@
 
         transition: transform .8s;
 
-        animation: zoomInDown;
-        animation-duration: 2s;
+        /* animation: zoomInDown;
+        animation-duration: 2s; */
     }
 
     .wrapper-sobre:hover {
@@ -250,5 +250,24 @@
         border-radius: 3px;
         font-weight: bold;
         background-color: white;
+    }
+
+    [data-anime] {
+        opacity: 0;
+        transition: 1.5s;
+    }
+
+    [data-anime='left'] {
+        transform: translate3d(-50px, 0, 0);
+    }
+
+
+    [data-anime='right'] {
+        transform: translate3d(50px, 0, 0);
+    }
+
+    [data-anime].animate {
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
     }
 }
