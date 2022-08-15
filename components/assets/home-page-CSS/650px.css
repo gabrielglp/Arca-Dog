@@ -103,4 +103,157 @@
     img {
         width: 30%;
     }
+
+    aside {
+        width: 100%;
+        height: 85vh;
+        background-image: linear-gradient(rgba(197, 216, 216, 0.76), rgba(162, 179, 185, 0.7)), url('../images/sitting-basenji-dog-wearing-a-huge-white-motorcycle-helmet-in-a-room-with-white-walls-and-light-wooden-floors.jpg') !important;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .section-sobre {
+        display: grid;
+        grid-template-columns: 102%;
+        height: 84vh;
+        justify-content: center;
+        margin-left: 59vw;
+        align-items: center;
+    }
+
+    .wrapper-sobre {
+        width: 70%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 25px 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.094);
+
+        transition: transform .8s;
+
+        animation: zoomInDown;
+        animation-duration: 2s;
+    }
+
+    .wrapper-sobre:hover {
+        transform: scale(1.05);
+    }
+
+    .wrapper-sobre h1 {
+        font-size: 2.5vw;
+        color: rgb(86, 154, 231);
+        margin-bottom: 20px;
+    }
+
+    .wrapper-sobre p {
+        color: rgb(98, 98, 98);
+        font-size: 1.35vw;
+    }
+
+    footer {
+        background-color: #657ff1;
+        padding: 50px 0;
+    }
+
+    .container-footer {
+        max-width: 1400px;
+        padding: 0 4%;
+        margin: auto;
+    }
+
+    .row-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-col {
+        width: 25%;
+        padding: 0 15px;
+    }
+
+    .footer-col h4 {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 20px;
+        font-weight: 500;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    .footer-col ul {
+        list-style: none;
+    }
+
+    .footer-col ul li {
+        margin: 10px 0;
+    }
+
+    .footer-col ul li a {
+        font-size: 11px;
+        text-transform: capitalize;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .footer-col ul li a:hover {
+        color: #cecdcd;
+        padding-left: 10px;
+    }
+
+    .footer-col .medias-socias {
+        margin-top: 30px;
+    }
+
+    .footer-col .medias-socias a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        margin: 0 10px 10px 0;
+        text-decoration: none;
+        border-radius: 50%;
+        color: white;
+        border: 1px solid white;
+        transition: all 0.5s ease;
+    }
+
+    .footer-col .medias-socias a i {
+        font-size: 13px;
+    }
+
+    .footer-col .medias-socias a:hover {
+        color: #657ff1;
+        background-color: white;
+    }
+
+    .footer-col .form-sub input {
+        width: 100%;
+        padding: 10px;
+        font-size: 10px;
+        outline: none;
+        border: 1px solid white;
+        color: white;
+        background-color: #657ff1;
+    }
+
+    .footer-col .form-sub input::placeholder {
+        color: white;
+    }
+
+    .footer-col .form-sub button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 11px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: #657ff1;
+        border-radius: 3px;
+        font-weight: bold;
+        background-color: white;
+    }
 }
